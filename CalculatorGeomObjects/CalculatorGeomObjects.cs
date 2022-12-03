@@ -16,7 +16,7 @@ namespace CalculatorGeomObjects
             Welcome.WelcomeNotif();
             UserInputs.PickedObject();
             UserInputs.PickedOperation();
-            Console.WriteLine(UserInputs.userInputValues);
+            //Console.WriteLine(UserInputs.userInputValues);
 
         }
     }
@@ -37,48 +37,55 @@ namespace CalculatorGeomObjects
 
     public class UserInputs 
     {
-        public int pickedObject;
-        public int pickedOperation;
+        public int objectChoice;
+        public int operationChoice;
 
-        public int[] userInputValues = new int[3];
+        public int[] userInputValues = new int[2];
 
         public void PickedObject() 
         {
-            
-            Console.WriteLine("Hey! \nIn front of you is a list of objects with which we will work further:");
+            int arrayMax = 2;
+            Console.WriteLine("Hey! \nIn front of you is a list of objects with which we will work further: ");
             Console.WriteLine("\r \t1. Square." +
                               "\r\n \t2. Circle." +
                               "\r\n \t3. Rectangle." +
                               "\r\n \t4. Cuboid." +
                               "\r\n \t5. Cylinder." +
                               "\r\n \t6. Sphere.");
-            Console.Write("Please choose one of the options of the object to continue working with it:");
+            Console.Write("Please choose one of the options of the object to continue working with it: ");
 
 
-            switch (pickedObject = Convert.ToInt32(Console.ReadLine()))
+            switch (objectChoice = Convert.ToInt32(Console.ReadLine()))
             {
                 case 1:
-                    Console.WriteLine($"You picked - '{pickedObject}. Square'");
+                    Console.WriteLine($"\nYou picked - '{objectChoice}. Square'");
+                    userInputValues = new int[1];
+                    Console.WriteLine($"You must write - '{arrayMax - 1}' argument, please insert it - ");
+                    for (int i = 0; i != 1; i++)
+                    {
+                        Console.Write($"\n{i + 1}. "); //For beauty
+                        userInputValues[i] = Convert.ToInt32(Console.ReadLine());
+                    }
+
                     break;
                 case 2:
-                    Console.WriteLine($"You picked - '{pickedObject}. Circle'");
+                    Console.WriteLine($"You picked - '{objectChoice}. Circle'");
                     break;
                 case 3:
-                    Console.WriteLine($"You picked - '{pickedObject}. Rectangle'");
+                    Console.WriteLine($"You picked - '{objectChoice}. Rectangle'");
                     break;
                 case 4:
-                    Console.WriteLine($"You picked - '{pickedObject}. Cuboid'");
+                    Console.WriteLine($"You picked - '{objectChoice}. Cuboid'");
                     break;
                 case 5:
-                    Console.WriteLine($"You picked - '{pickedObject}. Cylinder'");
+                    Console.WriteLine($"You picked - '{objectChoice}. Cylinder'");
                     break;
                 case 6:
-                    Console.WriteLine($"You picked - '{pickedObject}. Sphere'");
+                    Console.WriteLine($"You picked - '{objectChoice}. Sphere'");
                     break;
                 default:
                     Console.WriteLine("You write wrong number, rewrite please.");
                     break;
-
             }
         }
 
@@ -87,14 +94,14 @@ namespace CalculatorGeomObjects
             Console.WriteLine("Now please choose which operation you want to take place:");
             Console.WriteLine("\r \t1. Area." +
                               "\r\n \t2. Volume.");
-            Console.Write("Please choose one of the options of the operation to continue working with it:");
-            switch (pickedOperation = Convert.ToInt32(Console.ReadLine()))
+            Console.Write("Please choose one of the options of the operation to continue working with it: ");
+            switch (operationChoice = Convert.ToInt32(Console.ReadLine()))
             {
                 case 1:
-                    Console.WriteLine($"You picked - '{pickedOperation}. Area'");
+                    Console.WriteLine($"You picked - '{operationChoice}. Area'");
                     break;
                 case 2:
-                    Console.WriteLine($"You picked - '{pickedOperation}. Volume'");
+                    Console.WriteLine($"You picked - '{operationChoice}. Volume'");
                     break;
                 default:
                     Console.WriteLine("You write wrong number, rewrite please.");
@@ -103,17 +110,7 @@ namespace CalculatorGeomObjects
             }
         }
 
-        public void UserArguments()
-        {
-            int arrayMax = 3;
-            if (pickedObject <= 3)
-            {
-                userInputValues = new int[arrayMax - 1];
-            }
-            else 
-            {
-                userInputValues = new int[arrayMax];
-            }
-        }
+
     }
+
 }
