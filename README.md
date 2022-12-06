@@ -1,7 +1,7 @@
 # CalculatorGeomObjects
 
-&emsp;&emsp;&emsp;&emsp;Zadaní<br />
-        &emsp;&emsp;Konzolová aplikace - kalkulačka geometrických objektů<br />
+Zadaní<br /><br />
+Konzolová aplikace - kalkulačka geometrických objektů<br /><br />
             - výstupem bude konzolová aplikace napsaná v c#<br />
             - po startu si uživatel zvolí:<br />
             - jaký typ objektu chce počítat,<br />
