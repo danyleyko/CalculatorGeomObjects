@@ -1,7 +1,7 @@
 # CalculatorGeomObjects
 
-Zadaní<br />
-        Konzolová aplikace - kalkulačka geometrických objektů<br />
+&emsp;&emsp;&emsp;&emsp;Zadaní<br />
+        &emsp;&emsp;Konzolová aplikace - kalkulačka geometrických objektů<br />
             - výstupem bude konzolová aplikace napsaná v c#<br />
             - po startu si uživatel zvolí:<br />
             - jaký typ objektu chce počítat,<br />
@@ -9,13 +9,13 @@ Zadaní<br />
             - vstupní parametry pro výpočet.<br />
             - po potvrzení aplikace vypíše spočítanou hodnotu zvolené operace<br />
             - příklady typů objektů<br />
-                *- čtverec<br />
-                *- obdélník<br />
-                *- kruh<br />
-                *- kvádr<br />
+                &emsp;- čtverec<br />
+                &emsp;- obdélník<br />
+                &emsp;- kruh<br />
+                &emsp;- kvádr<br />
             - příklady typů operací<br />
-                *- obsah<br />
-                *- objem<br />
+                &emsp;- obsah<br />
+                &emsp;- objem<br />
 Aplikace by měla podporovat alespoň 2 druhy rovinných (např. obdélník a kruh) a 2 druhy<br />
 prostorových geometrických objektů (např. kvádr a válec).<br />
 <br />
