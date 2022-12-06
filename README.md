@@ -9,13 +9,13 @@ Zadaní<br />
             - vstupní parametry pro výpočet.<br />
             - po potvrzení aplikace vypíše spočítanou hodnotu zvolené operace<br />
             - příklady typů objektů<br />
-                - čtverec<br />
-                - obdélník<br />
-                - kruh<br />
-                - kvádr<br />
+                *- čtverec<br />
+                *- obdélník<br />
+                *- kruh<br />
+                *- kvádr<br />
             - příklady typů operací<br />
-                - obsah<br />
-                - objem<br />
+                *- obsah<br />
+                *- objem<br />
 Aplikace by měla podporovat alespoň 2 druhy rovinných (např. obdélník a kruh) a 2 druhy<br />
 prostorových geometrických objektů (např. kvádr a válec).<br />
 <br />
