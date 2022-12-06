@@ -1,6 +1,6 @@
 # CalculatorGeomObjects
 
-<!---Zadaní
+Zadaní
         Konzolová aplikace - kalkulačka geometrických objektů
             - výstupem bude konzolová aplikace napsaná v c#
             - po startu si uživatel zvolí:
@@ -28,4 +28,4 @@ Od výstupu práce se bude odvíjet směr případného pohovoru.
 Nejsou kladeny žádné podmínky na využití externích knihoven (například pro zpracování
 parametrů), rádi bychom ale viděli vlastní řešení návrhu (ideálně se tedy vyhnout použití
 knihovny přímo pro výpočet operací nad geometrickými objekty).
--->
+
